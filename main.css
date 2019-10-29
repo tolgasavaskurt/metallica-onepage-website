@@ -1,0 +1,895 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+body,html{
+	height:100%;
+	width:100%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER BAŞLANGICI */
+.header {
+	position:fixed;
+	width:100%;
+  	padding:10px 30px;
+	margin:0;
+}
+
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 0px 12px;
+  text-decoration: none;
+  font-size: 20px; 
+  line-height: 25px;
+  border-radius: 4px;
+	transition: .2s;
+}
+
+
+.home{
+
+	height:50px;
+    width:150px;
+}
+.home:hover{
+	transform: rotate(-10deg) scale(1,1);
+}
+
+.header a:hover {
+  color:#6C6C6C;
+}
+
+.header-right {
+	padding:20px 0px;
+	float:right;
+    text-align:center;
+	margin-right:4%;
+}
+
+
+
+@media screen and (max-width: 843px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+  .header{
+		width: 175px;
+	  background: black;
+	  opacity: 0.6;
+	}
+}
+
+/* HEADER BİTİŞİ VE SABİT HEADER BAŞLANGICI*/
+
+.sabitheader{
+	position:fixed;
+	background-color:black;
+	width:100%;
+  	padding: 10px 30px;
+	transition: .8s;
+}
+
+.sabitheader a{
+	float: left;
+  color: white;
+  text-align: center;
+  padding: 0px 12px;
+  text-decoration: none;
+  font-size: 20px; 
+  line-height: 25px;
+  border-radius: 4px;
+	font-weight: 100;
+}
+
+.sabitheader a:hover{
+	color:#A70317;
+	
+}
+@media screen and (max-width: 843px) {
+  .sabitheader a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+  .sabitheader{
+		width: 175px;
+	  background: black;
+	  opacity: 0.6;
+	}
+}
+
+/* SABİT HEADER BİTİŞİ*/
+
+/* GÖRSEL VE BANT CLASSLARI*/
+
+.gorsel{
+	height:100%;
+	background-color: #2F2F2F;
+	background-size:cover;
+	background-attachment: fixed;
+}
+
+.bant{
+	height:100%;
+	background-color: #DADADA;
+}
+
+/* ANASAYFA BAŞLANGICI*/
+
+#g1{
+	background-image: url("images/stadium.jpg");
+	
+}
+.welcome{
+	width:100%;
+	height: auto;
+	padding-top: 13%;
+	text-align:center;
+	color: white;	
+}
+.welcome h1{
+	font-size: 60px;
+	font-weight: 100;
+}
+.join{
+	width:100%;
+	height: auto;
+	margin-top: 16%;
+	text-align:center;
+	color: white;
+}
+.join p{
+	font-size: 20px; 
+	font-weight: 700;
+}
+@media screen and (max-width:1350px){
+	#g1{
+		height:110%;
+	}
+	
+}
+@media screen and (min-width:1400px){
+	#g1{
+		height:100%;
+	}
+	.welcome{
+	width:100%;
+	height: auto;
+	padding-top: 13%;
+	text-align:center;
+	color: white;	
+}
+.welcome h1{
+	font-size: 80px;
+	font-weight: 100;
+}
+.join{
+	width:100%;
+	height: auto;
+	margin-top: 18%;
+	text-align:center;
+	color: white;
+}
+.join p{
+	font-size: 30px; 
+	font-weight: 700;
+}
+
+
+}
+.sosyal{
+	margin: 1% 0%;;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    
+}
+
+
+.sosyal ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.sosyal ul li{
+    list-style: none;
+    margin: 0 5px;
+	margin-left: 30px;
+}
+.sosyal ul li a{
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    transition: .5s;
+	
+}
+@media screen and (max-width: 1000px) {
+  .sosyal {
+	height: auto;
+	  align-items: center;
+  }
+	.sosyal ul li a{
+		width: 40px;
+		height: 40px;
+		font-size:20px;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+  .sosyal {
+	height: auto;
+	  align-items: center;
+  }
+	.sosyal ul li a{
+		width: 140px;
+		height: 140px;
+		font-size:70px;
+	}
+}
+
+
+.sosyal ul li a:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+}
+
+
+.sosyal ul li:nth-child(1) a:hover{
+    background:#0234AA;
+}
+.sosyal ul li:nth-child(2) a:hover{
+    background:#1D7AD0;
+}
+.sosyal ul li:nth-child(3) a:hover{
+    background:#E90057;
+}
+.sosyal ul li:nth-child(4) a:hover{
+    background:#C00017;
+}
+.sosyal ul li:nth-child(5) a:hover{
+    background:#15942F;
+}
+.sosyal ul li:nth-child(6) a:hover{
+    background:#2F2F2F;
+}
+
+/* ANASAYFA BİTİŞİ */
+
+/* EVENTS BAŞLANGICI */
+
+#g2{
+	background-image: url("images/concert4.jpg");
+}
+#container{
+	padding-top:9%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	overflow: hidden;
+}
+#leftBox,
+#midBox,
+#rightBox{
+    display:block;
+    width:300px;
+    height:400px;
+    margin:2% 1%;
+    float:left;
+    position:relative;
+    padding:5px;
+    overflow:hidden;
+}
+.date{
+    display:block;
+    position:absolute;
+    right:10px;
+    line-height:0px;
+    text-align:center;
+    padding:10px;
+	margin-top: -5px;
+    background:#fff;
+    color:#262626;
+    font-weight:bold;
+    transition:.5s;
+}
+.day{
+    padding-top:20px;
+	padding-bottom:10px;
+	font-size:20px;
+}
+.month{
+    font-size:12px;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.text{
+    display:block;
+    position:absolute;
+    bottom:10px;
+    width:85%;
+    left:50%;
+    transform:translateX(-50%);
+}
+.text h3{
+    font-size:18px;
+    color:#fff;
+    text-shadow:0px 0px 20px #000;
+}
+.text p{
+    font-size:14px;
+    color:#fff;
+    text-shadow:0px 0px 20px #000;
+}
+@media screen and (min-width: 1400px) {
+  #leftBox,
+#midBox,
+#rightBox{
+    display:block;
+    width:420px;
+    height:560px;
+    
+}
+.date{
+    display:block;
+    position:absolute;
+    right:10px;
+    line-height:0px;
+    text-align:center;
+    padding:10px;
+	margin-top: -5px;
+    background:#fff;
+    color:#262626;
+    font-weight:bold;
+    transition:.5s;
+}
+.day{
+    padding-top:30px;
+	padding-bottom:20px;
+	font-size:30px;
+}
+.month{
+    font-size:20px;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.text{
+    display:block;
+    position:absolute;
+    bottom:20px;
+    width:85%;
+    left:50%;
+    transform:translateX(-50%);
+}
+.text h3{
+    font-size:30px;
+    color:#fff;
+    text-shadow:0px 0px 20px #000;
+}
+.text p{
+    font-size:22px;
+    color:#fff;
+    text-shadow:0px 0px 20px #000;
+}
+}
+#leftBox::before,
+#midBox::before,
+#rightBox::before {
+    content:"";
+    background-size: cover;
+    color: #fff;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url("images/BUY.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+#leftBox:hover::before,
+#midBox:hover::before,
+#rightBox:hover::before{
+    opacity:1;
+    transition:.5s;
+}
+#leftBox:hover > .date,
+#midBox:hover > .date,
+#rightBox:hover > .date{
+    transform:translateY(-80px);
+    transition:.5s;
+}
+#leftBox:hover > .text h3,
+#leftBox:hover > .text p, 
+#midBox:hover > .text h3,
+#midBox:hover > .text p, 
+#rightBox:hover > .text h3,
+#rightBox:hover > .text p{
+    display: block;
+}
+#leftBox {
+    background-image: url("images/james-concert.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#midBox {
+    background-image: url("images/kirk-concert.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#rightBox {
+    background-image: url("images/lars1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* EVENTS BİTİŞİ */
+
+/* GALERİ BAŞLANGICI */
+
+#g3{
+	background-image: url("images/concert3.jpg");
+	background-size: cover;
+	height:170%;
+}
+.gallery{
+	width:98%;
+	height:auto;
+	margin-top:7%;
+	margin-left: 1.05%;
+	margin-right: 1%;
+	padding: 0.1% 0%;
+	float:left;
+	text-align:center;
+} 
+.gallery h2{
+	font-size:40px;
+	font-weight:800;
+	letter-spacing: 0.200em;
+}
+.gallery img{
+	padding: 0;
+	margin:0.5% 0.05%;
+	border-radius: 5px;
+}
+
+.gallery img:hover{
+	transform: scale(1.05);
+	transition: .3s;
+	box-shadow:0px 0px 30px 10px black;
+}
+.video{
+	width:100%;
+    height:auto;
+	margin:5% 0%;
+    float:left;
+	text-align: center;
+	color: black;
+}
+.video iframe{
+	margin: 3% 1%;
+}
+
+.video h2{
+	font-size:40px;
+	font-weight:800;
+	letter-spacing: 0.200em;
+}
+
+@media screen and (min-width:1400px){
+	#g3{
+		height:180%;
+	}
+	.video iframe{
+		height:360px;
+}
+
+.video h2{
+	font-size:60px;
+	font-weight:800;
+	letter-spacing: 0.200em;
+}
+.gallery h2{
+	font-size:60px;
+	font-weight:800;
+	letter-spacing: 0.200em;
+}
+}
+
+/* GALERİ BİTİŞİ */
+
+/* ABOUT BAŞLANGICI */
+
+#b1{
+	background-color:#FBFBFB;
+}
+img{
+	margin-top:12%;
+	margin-left:3%;
+}
+.bio{
+    width:60%;
+    height:auto;
+    margin-right:3%;
+	margin-top:10%;
+    float:right;
+    position:static;
+    padding:10px;
+}
+.bio h1{
+	text-align: center;
+}
+.bio p{
+	font-weight: 600;
+}
+@media screen and (max-width:1350px){
+	#b1{
+		height:150%;
+	}
+}
+@media screen and (max-width:800px){
+	#b1{
+		height:160%;
+	}
+}
+@media screen and (max-width:700px){
+	#b1{
+		height:170%;
+	}
+}
+@media screen and (max-width:600px){
+	#b1{
+		height:200%;
+	}
+}
+@media screen and (max-width:560px){
+	#b1{
+		height:210%;
+	}
+}
+@media screen and (max-width:500px){
+	#b1{
+		height:230%;
+	}
+}
+@media screen and (min-width:1600px){
+
+
+.bio h1{
+	text-align: center;
+	font-size: 60px;
+}
+.bio p{
+	font-size:20px;
+	font-weight: 600;
+}
+}
+
+/* ABOUT BİTİŞİ */
+
+/* DISCOGRAPHY BAŞLANGICI */
+
+#b2{
+	background-image: url("images/light.jpg");
+	background-size: cover;
+	height:390%;
+}
+
+.album{
+	width:100%;
+	height:auto;
+	padding:6% 0 0 0;
+	margin: 0;
+	text-align: center;
+	color: white;
+}
+.album h2{
+	font-size:40px;
+	font-weight:800;
+	letter-spacing: 0.200em;
+	margin: 2% 0%;
+}
+.album img{
+	padding:0;
+	margin:1% 0.65%;
+	border-radius: 5px;
+}
+
+.album img:hover{
+	transform: scale(1.05);
+	transition: .3s;
+	box-shadow:0px 0px 30px 10px white;
+}
+
+.music{
+	width:100%;
+    height:auto;
+	margin:0% 5%;
+}
+
+
+.music .spotify iframe{
+	margin:2% 2.5%;
+	float:left;
+}
+@media screen and (min-width:1400px){
+#b2{
+	height:290%;
+}
+
+.album{
+	width:100%;
+	height:auto;
+	padding:6% 0 0 0;
+	margin: 0;
+	text-align: center;
+	color: white;
+}
+.album h2{
+	font-size:60px;
+	font-weight:800;
+	letter-spacing: 0.200em;
+	margin: 2% 0%;
+}
+.album img{
+	padding:0;
+	margin:1% 0.65%;
+	border-radius: 5px;
+}
+
+.album img:hover{
+	transform: scale(1.05);
+	transition: .2s;
+	box-shadow:0px 0px 30px 10px white;
+}
+
+.music{
+	width:100%;
+    height:auto;
+	margin:0% 1%;
+}
+
+
+.music .spotify iframe{
+	margin:2% 2.3%;
+	float:left;
+	width:20%;
+	height:400px;
+}
+}
+
+/* DISCOGRAPHY BİTİŞİ */
+
+/* CONTACT BAŞLANGICI */
+
+#b3{
+	background:url("images/contact.png");
+	background-size:cover;
+}
+
+.contact-title{
+	height: 120px;
+	width: 100%;
+    padding-top: 10%;
+    color: black;
+	text-align: center;
+}
+.contact-title h1{
+    font-size: 70px;
+}
+
+
+
+form{
+    margin-top: 0%;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.form-control{
+	width: 40%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    color: black;
+    font-size: 15px;
+    margin-bottom: 16px;
+	font-family: 'Montserrat', sans-serif; 
+}
+
+input{
+    height: 45px;
+}
+form .submit{
+    background:#000000;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 20px
+}
+form .submit:hover{
+    background:#A70317;
+    cursor: pointer;
+}
+@media screen and (min-width:1600px){
+.contact-title{
+	height: 120px;
+	width: 100%;
+    padding-top: 8%;
+    color: black;
+	text-align: center;
+}
+.contact-title h1{
+    font-size: 100px;
+}
+
+
+
+form{
+    margin-top: 4%;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.form-control{
+	width: 40%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: black;
+    font-size: 25px;
+    margin-bottom: 25px;
+	font-family: 'Montserrat', sans-serif; 
+}
+input{
+    height: 40px;
+}
+form .submit{
+    background:#000000;
+    border-color: transparent;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 20px
+}
+}
+
+/* CONTACT BİTİŞİ */
+
+/* FOOTER BAŞLANGICI  */
+
+.footer {
+  	width: 100%;
+  	position: relative;
+  	height: auto;
+  	background-color:black;
+}
+.footer .col {
+  	width: 25%;
+  	height: auto;
+  	float: left;
+  	box-sizing: border-box;
+  	padding: 20px 20px 20px 20px;
+}
+.footer .social{
+	width: 25%;
+  	height: auto;
+	float:left;
+}
+.footer .col h1 {
+  	margin: 0;
+  	padding: 0;
+  	font-family: inherit;
+  	font-size: 12px;
+  	line-height: 17px;
+  	color: gray;
+  	font-weight: normal;
+  	text-transform: uppercase;
+  	letter-spacing: 0.250em;
+	text-align: center;
+}
+.footer .col ul {
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+}
+.footer .col ul li{
+  	text-align: center;
+	padding: 5px 0px 5px 0px;
+  	padding-top: 3px;
+}
+.footer .col ul li a{
+  	color: white;
+  	font-size: 14px;
+  	cursor: pointer;
+  	transition: .2s;
+	text-decoration: none;
+}
+.footer .col ul li a:hover {
+  	color:#A70317;
+  	transition: .1s;
+  
+}
+.footer .social ul{
+	text-align: center;
+}
+.footer .social ul li {
+	display: inline-block;
+  	padding-right: 5px !important;
+}
+.footer .social ul li a {
+	color:white;
+	font-size:20px;
+}
+
+.social ul li:nth-child(1) a:hover{
+    color:#00489E;
+}
+.social ul li:nth-child(2) a:hover{
+    color:#26A4D1;
+}
+.social ul li:nth-child(3) a:hover{
+    color:#E90057;
+}
+.social ul li:nth-child(4) a:hover{
+    color:#C00017;
+}
+.social ul li:nth-child(5) a:hover{
+    color:#15942F;
+}
+.social ul li:nth-child(6) a:hover{
+    color:#6D6D6D;
+}
+
+
+.clearfix {
+  	clear: both;
+}
+
+
+@media only screen and (max-width: 830px) {
+.footer .col {
+    width: 50%;
+   }
+}
+@media only screen and (max-width: 600px) {
+.footer .col {
+    width: 100%;
+  }
+}
+
+/* FOOTER BİTİŞİ */
